@@ -58,7 +58,7 @@ requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 
 	/*** This cross-browser function requests fullscreen mode in the entire page ***/
 	function requestFullscreen () {
-		return;
+		//return;
 		let rootElement = document.documentElement;
 
 		if (rootElement.requestFullscreen) { // Default w3c
@@ -91,10 +91,10 @@ requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 		}
 	}
 
-	// TODO: Uncomment this
-	/* window.onload = requestFullscreen;
+	
+	window.onload = requestFullscreen;
 	document.body.onload = requestFullscreen;
-	setTimeout(requestFullscreen, 100); */
+	setTimeout(requestFullscreen, 100);
 	/* window.onload = onInit;
 	document.body.onload = onInit;
 	setTimeout(onInit, 100); */
