@@ -1,0 +1,56 @@
+@keyframes page-about-fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes page-about-fade-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#page-about {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+    &.exiting {
+        animation: page-about-fade-out 1000ms;
+		animation-delay: 0ms;
+		animation-fill-mode: forwards;
+		animation-iteration-count: 1;
+		animation-direction: forwards;
+		animation-timing-function: ease-in-out;
+    }
+
+	div.main-wrapper {
+		position: relative;
+	}
+
+	h1 {
+		position: fixed;
+		top: calc(50% - 19.5px);
+		transition: 125ms ease-in-out;
+		left: 0%;
+		right: 0%;
+		
+		text-align: center;
+		color: whitesmoke;
+		font-family: 'Lato', sans-serif;
+		
+		animation: page-about-fade-in 500ms;
+		animation-delay: 0ms;
+		animation-fill-mode: forwards;
+		animation-iteration-count: 1;
+		animation-direction: forwards;
+		animation-timing-function: ease-in-out;
+	}
+}

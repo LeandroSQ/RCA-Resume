@@ -1,0 +1,26 @@
+Projetos em que atuei:
+Omni ->
+Sabemi ->
+Banco renner -> SouDigi+, Whitelabel (Cruzeirense, Athletico, Camioneiro)
+Central de saúde ->
+Safra ->
+OmniAuthenticator ->
+Molecoola ->
+Bonafont ->
+RCI direct ->
+Topázio -> 
+DB-intra
+TAQUI iOS
+Sky sirius
+Sodexo
+Seprorgs
+
+Meus projetos:
+LeandroLytics
+PartialView
+EasyImagePicker
+EasyGeolocation
+PRChecker
+Android template e Android architecture
+Android auto release
+Scheduller

@@ -1,0 +1,36 @@
+@keyframes page-end-slide-in {
+	0% {
+		transform: translateX(110%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+
+#page-end {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	animation: page-end-slide-in 250ms;
+	animation-delay: 0ms;
+	animation-fill-mode: both;
+	animation-iteration-count: 1;
+	animation-direction: forwards;
+	animation-timing-function: ease-in;
+
+	h1 {
+		position: fixed;
+		top: calc(50% - 19.5px);
+		transition: 125ms ease-in-out;
+		left: 0%;
+		right: 0%;
+		
+		text-align: center;
+		color: whitesmoke;
+		font-family: 'Lato', sans-serif;
+	}
+}

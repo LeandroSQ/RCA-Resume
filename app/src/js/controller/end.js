@@ -1,0 +1,29 @@
+define(function () {
+    class EndPage extends PageModel {
+
+        constructor () {
+            super ("End");
+        }
+
+        setupTyping () {
+            console.log ("[EndPage] setupTyping");
+           /*  this.typeit = new TypeIt ("#typed-page", { speed: 50, startDelay: 0 })
+                .type ("Esse sou eu :)")
+                .go (); */
+        }
+
+        onShow () {
+            console.log ("[EndPage] onShow");
+            this.setupTyping ();
+        }
+        onHide () {
+            return new Promise (async (resolve, reject) => {
+                console.log ("[EndPage] onHide");
+
+                setTimeout(resolve, 1000);
+            });
+        }
+    }
+
+    return new EndPage ();
+});
