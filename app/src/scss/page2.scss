@@ -21,9 +21,11 @@
 @keyframes page2-slide-out {
 	0% {
 		transform: translateX(0%);
+		opacity: 1;
 	}
 	100% {
-		transform: translateX(-110%);
+		// transform: translateX(-110%);
+		opacity: 0;
 	}
 }
 
@@ -35,7 +37,7 @@
 	flex-wrap: wrap;	
 	
 	&.exiting {
-		animation: page2-slide-out 750ms;
+		animation: page2-slide-out 1s;
 		animation-delay: 0ms;
 		animation-fill-mode: both;
 		animation-iteration-count: 1;

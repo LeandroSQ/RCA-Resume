@@ -92,7 +92,7 @@ define(function () {
         animateProjectBadgesEnter () {
             console.log ("[Page2] animateProjectBadgesEnter");
             if (this.currentProjectPointer >= this.projectList.length) {
-                setTimeout (window.nextPage, 500);
+                setTimeout (window.nextPage, 1500);
                 return;
             }
 
@@ -135,7 +135,7 @@ define(function () {
                 console.log ("[Page2] onHide");
 
                 document.querySelector ("#page2").classList.add ("exiting");
-                setTimeout(resolve, 750);
+                setTimeout(resolve, 1000);
             });
         }
     }

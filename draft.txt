@@ -1,4 +1,4 @@
-Projetos em que atuei:
+﻿Projetos em que atuei:
 Omni ->
 Sabemi ->
 Banco renner -> SouDigi+, Whitelabel (Cruzeirense, Athletico, Camioneiro)
@@ -24,3 +24,4 @@ PRChecker
 Android template e Android architecture
 Android auto release
 Scheduller
+SwaggerDoc generator
