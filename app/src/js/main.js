@@ -9,7 +9,8 @@ const pageList = [
 
 let pathDefinitions = { };
 pageList.forEach(page => {
-    pathDefinitions[page] = `js/controller/${page}.js`;
+    let k = `js/controller/${page}.js`;
+    pathDefinitions[k] = k;
 });
 require.config({
     baseUrl: `https://leandrosq.github.io/`,
@@ -17,7 +18,7 @@ require.config({
 });
 // 
 
-requirejs (pageList.map (x => `js/controller/${x}.js`), function () {
+requirejs (pageList.map(x => `js/controller/${x}.js`), function () {
 	// Global definitions
 	window.pages = [... arguments];
 	window.currentPageIndex = -1;
