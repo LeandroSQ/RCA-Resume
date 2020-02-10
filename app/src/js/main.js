@@ -9,7 +9,7 @@ const pageList = [
 
 let pathDefinitions = { };
 pageList.forEach(page => {
-    pathDefinitions[page] = `/app/src/js/controller/${page}`;
+    pathDefinitions[page] = `/RCA-Resume/app/src/js/controller/${page}`;
 });
 console.log(pathDefinitions);
 require.config({
