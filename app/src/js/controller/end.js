@@ -2,7 +2,7 @@ define(function () {
     class EndPage extends PageModel {
 
         constructor () {
-            super ("End");
+            super ("end");
         }
 
         setupTyping () {

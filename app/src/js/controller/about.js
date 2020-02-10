@@ -2,7 +2,7 @@ define(function () {
     class AboutPage extends PageModel {
 
         constructor () {
-            super ("About");
+            super ("about");
 
             this.lineCount = 0;
         }

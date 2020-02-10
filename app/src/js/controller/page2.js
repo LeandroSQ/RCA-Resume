@@ -2,7 +2,7 @@ define(function () {
     class Page2 extends PageModel {
 
         constructor () {
-            super ("Page2");
+            super ("page2");
             
             this.projectList = [];
             this.currentProjectPointer = 0;

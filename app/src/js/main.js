@@ -11,13 +11,12 @@ let pathDefinitions = { };
 pageList.forEach(page => {
     pathDefinitions[page] = `/RCA-Resume/app/src/js/controller/${page}`;
 });
-console.log(pathDefinitions);
 require.config({
     baseUrl: `https://leandrosq.github.io/`,
     paths: pathDefinitions
 });
 
-requirejs (pageList/* pageList.map(x => `js/controller/${x}.js` */, function () {
+requirejs (pageList, function () {
 	// Global definitions
 	window.pages = [... arguments];
 	window.currentPageIndex = -1;

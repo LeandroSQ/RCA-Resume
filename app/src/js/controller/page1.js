@@ -2,7 +2,7 @@ define(function () {
     class Page1 extends PageModel {
 
         constructor () {
-            super ("Page1");
+            super ("page1");
             this.state = "entering";
             this.languages = [];
             this.currentLanguagePointer = 0;
