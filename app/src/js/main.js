@@ -7,7 +7,7 @@ const pageList = [
 	"end"
 ];
 
-requirejs (pageList.map (x => `RCA-ResumeRCA-Resume/app/src/js/controller/${x}.js`), function () {
+requirejs (pageList.map (x => `RCA-Resume/app/src/js/controller/${x}.js`), function () {
 	// Global definitions
 	window.pages = [... arguments];
 	window.currentPageIndex = -1;
@@ -58,7 +58,6 @@ requirejs (pageList.map (x => `RCA-ResumeRCA-Resume/app/src/js/controller/${x}.j
 
 	/*** This cross-browser function requests fullscreen mode in the entire page ***/
 	function requestFullscreen () {
-		return;
 		let rootElement = document.documentElement;
 
 		if (rootElement.requestFullscreen) { // Default w3c
