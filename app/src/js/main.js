@@ -7,7 +7,7 @@ const pageList = [
 	"end"
 ];
 
-requirejs (pageList.map (x => `RCA-Resume/app/src/js/controller/${x}.js`), function () {
+requirejs (pageList.map (x => `/RCA-Resume/app/src/js/controller/${x}.js`), function () {
 	// Global definitions
 	window.pages = [... arguments];
 	window.currentPageIndex = -1;
