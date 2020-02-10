@@ -9,7 +9,7 @@ const pageList = [
 
 let pathDefinitions = { };
 pageList.forEach(page => {
-    let k = `js/controller/${page}.js`;
+    let k = `../js/controller/${page}.js`;
     pathDefinitions[k] = k;
 });
 require.config({
