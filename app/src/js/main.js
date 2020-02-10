@@ -17,7 +17,7 @@ require.config({
 });
 // 
 
-requirejs (pageList/* .map (x => `js/controller/${x}.js`) */, function () {
+requirejs (pageList.map (x => `js/controller/${x}.js`), function () {
 	// Global definitions
 	window.pages = [... arguments];
 	window.currentPageIndex = -1;
