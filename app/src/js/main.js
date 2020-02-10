@@ -13,11 +13,11 @@ pageList.forEach(page => {
 });
 require.config({
     baseUrl: `https://leandrosq.github.io/RCA-Resume/app/src/`,
-    paths: pathDefinitions
+    //paths: pathDefinitions
 });
 // 
 
-requirejs (pageList.map (x => `js/controller/${x}.js`), function () {
+requirejs (pageList/* .map (x => `js/controller/${x}.js`) */, function () {
 	// Global definitions
 	window.pages = [... arguments];
 	window.currentPageIndex = -1;
