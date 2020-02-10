@@ -9,11 +9,11 @@ const pageList = [
 
 let pathDefinitions = { };
 pageList.forEach(page => {
-    pathDefinitions[page] = `https://leandrosq.github.io/RCA-Resume/app/src/js/controller/${page}.js`;
+    pathDefinitions[page] = `js/controller/${page}.js`;
 });
 require.config({
     baseUrl: `https://leandrosq.github.io/RCA-Resume/app/src/`,
-    //paths: pathDefinitions
+    paths: pathDefinitions
 });
 // 
 
