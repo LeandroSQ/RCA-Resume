@@ -15,7 +15,6 @@ require.config({
     baseUrl: `https://leandrosq.github.io/`,
     paths: pathDefinitions
 });
-// 
 
 requirejs (pageList/* pageList.map(x => `js/controller/${x}.js` */, function () {
 	// Global definitions
