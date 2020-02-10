@@ -12,7 +12,7 @@ pageList.forEach(page => {
     pathDefinitions[page] = `app/src/js/controller/${page}.js`;
 });
 require.config({
-    baseUrl: `https://leandrosq.github.io/app/src/js/controller/`,
+    baseUrl: `https://leandrosq.github.io/app/src/`,
     paths: pathDefinitions
 });
 
