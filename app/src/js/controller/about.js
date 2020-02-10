@@ -67,6 +67,7 @@ define(function () {
             console.log ("[AboutPage] onShow");
             this.setupTyping ();
         }
+        
         onHide () {
             return new Promise (async (resolve, reject) => {
                 console.log ("[AboutPage] onHide");

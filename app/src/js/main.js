@@ -12,7 +12,7 @@ pageList.forEach(page => {
     pathDefinitions[page] = `js/controller/${page}.js`;
 });
 require.config({
-    baseUrl: `https://leandrosq.github.io/RCA-Resume/app/src/`,
+    baseUrl: `https://leandrosq.github.io/`,
     paths: pathDefinitions
 });
 // 
