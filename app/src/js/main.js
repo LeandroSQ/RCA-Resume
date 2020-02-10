@@ -9,11 +9,11 @@ const pageList = [
 
 let pathDefinitions = { };
 pageList.forEach(page => {
-    pathDefinitions[page] = `/js/controller/${page}`;
+    pathDefinitions[page] = `/app/src/js/controller/${page}`;
 });
 console.log(pathDefinitions);
 require.config({
-    baseUrl: `https://leandrosq.github.io/app/src/`,
+    baseUrl: `https://leandrosq.github.io/`,
     paths: pathDefinitions
 });
 
