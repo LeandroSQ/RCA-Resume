@@ -60,13 +60,15 @@ define(function () {
 
         setupTyping () {
             console.log ("[Page1] setupTyping");
+            let currentYear = new Date().getFullYear();
+            
             this.typeit = new TypeIt ("#typed-page", { speed: 50, startDelay: 900 })
                 .type ("Programador desde os <strong style='color: #fd9005'>7 anos de idade</strong>")
                 .pause (300)
 
                 .break ()
                 .exec (this.animateLineBreak.bind (this, +1))
-                .type ("Totalizando <strong style='color: #08ffc8'>11 anos</strong>")
+                .type (`Totalizando <strong style='color: #08ffc8'>${currentYear - 2008} anos</strong>`)
                 .pause (750)
 
                 .exec (() => {
