@@ -15,7 +15,7 @@ class PageModel {
 	load () {
 		return new Promise ((resolve, reject) => {
 			// Mount the url object
-			const url = `${window.location.origin}/RCA-Resume/app/src/view/${this.identifier.toLowerCase()}.html`;
+			const url = `${window.location.origin}/app/src/view/${this.identifier}.html`;
 
 			// Query the url for the page html
 			let request = new XMLHttpRequest();
