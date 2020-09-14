@@ -2,7 +2,7 @@ define(function () {
     class Page1 extends PageModel {
 
         constructor () {
-            super ("Page1");
+            super ("page1");
             this.state = "entering";
             this.languages = [];
             this.currentLanguagePointer = 0;
@@ -60,6 +60,7 @@ define(function () {
 
         setupTyping () {
             console.log ("[Page1] setupTyping");
+
             this.typeit = new TypeIt ("#typed-page", { speed: 50, startDelay: 900 })
                 .type ("Programador desde os <strong style='color: #fd9005'>7 anos de idade</strong>")
                 .pause (300)

@@ -2,7 +2,7 @@ define(function () {
     class AboutPage extends PageModel {
 
         constructor () {
-            super ("About");
+            super ("about");
 
             this.lineCount = 0;
         }
@@ -59,6 +59,7 @@ define(function () {
             console.log ("[AboutPage] onShow");
             this.setupTyping ();
         }
+        
         onHide () {
             return new Promise (async (resolve, reject) => {
                 console.log ("[AboutPage] onHide");
