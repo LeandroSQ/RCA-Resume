@@ -7,13 +7,15 @@ define(function () {
 
         setupTyping () {
             console.log ("[EndPage] setupTyping");
-           /*  this.typeit = new TypeIt ("#typed-page", { speed: 50, startDelay: 0 })
-                .type ("Esse sou eu :)")
+
+            /* this.typeit = new TypeIt ("#typed-page", { speed: 50, startDelay: 0 })
+                // .type ("Esse sou eu :)")
                 .go (); */
         }
 
         onShow () {
             console.log ("[EndPage] onShow");
+            lazyload();
             this.setupTyping ();
         }
         onHide () {

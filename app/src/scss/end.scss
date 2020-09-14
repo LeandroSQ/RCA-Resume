@@ -20,7 +20,7 @@
 	animation-direction: forwards;
 	animation-timing-function: ease-in;
 
-	div#container {	
+	div#container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -32,19 +32,41 @@
 			grid-column-gap: 10px;
 			grid-row-gap: 10px;
 
-			img {		
+			img {
+				position: relative;
+				top: 0px;
 				display: block;
-				height: 256px;
+				height: 64px;
+
+				background-color: #efefef;
+				padding: 10pt;
+				border-radius: 5px;
+
+				box-shadow: 0px 0px 0px 0px transparent;
+
+				cursor: pointer;
+				transition: top 150ms, box-shadow 150ms;
+
+				&:hover {
+					top: -3px;
+					box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.5);
+				}
+
+				&:active {
+					top: 3px;
+				}
 			}
-		}		
+		}
 
 		h1 {
+			position: relative;
 			transition: 125ms ease-in-out;
 			left: 0%;
 			right: 0%;
 			margin-top: 20pt;
 			text-align: center;
 			color: whitesmoke;
+
 			font-family: 'Lato', sans-serif;
 		}
 	}

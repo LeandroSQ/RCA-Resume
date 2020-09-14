@@ -21,24 +21,16 @@ define(function () {
 
         setupTyping () {
             console.log ("[AboutPage] setupTyping");
-            // Fui monitor no curso
-
-            // Me formei no Técnico em Informática em 2016, com 15 anos.
-            // Comecei a dar aulas ainda com 15
-            // Fiz cursos de Inovação com Arduino com 16
-            // Entrei na faculdade cursando Análise e desenvolvimento de sistemas, com 17.
             
-            //me formo em 2021
-
             this.typeit = new TypeIt ("#typed-page", { speed: 50, startDelay: 900 })
                 .type ("Comecei a dar <strong style='color: #08ffc8'>Aulas particulares</strong> aos <strong style='color: #08ffc8'>14 anos</strong>")
                 .pause (750)
-            
+
                 .break ()
                 .exec (this.animateLineBreak.bind (this, +1))
                 .type ("Me formei como <strong style='color: #fd9005'>Técnico em Informática</strong> aos <strong style='color: #fd9005'>15 anos</strong>")
                 .pause (300)
-                
+
 
                 .break ()
                 .exec (this.animateLineBreak.bind (this, +1))

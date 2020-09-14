@@ -3,14 +3,14 @@ const pageList = [
 	"intro",
 	"page1",
 	"about",
-	"page2", 
+	"page2",
 	"end"
 ];
 
 requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 	// Global definitions
 	window.pages = [... arguments];
-	window.currentPageIndex = -1;
+	window.currentPageIndex = pageList.length - 2//-1;
 	window.lastPage = null
 	window.systemInitialized = false;
 
@@ -22,7 +22,7 @@ requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 					window.lastPage = null;
 					window.loadPage (page);
 				})
-				.catch (error => { 
+				.catch (error => {
 					console.trace (error);
 					console.error (error);
 					alert (error);
@@ -45,7 +45,7 @@ requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 				alert (error);
 			});
 	}
-	
+
 	/*** This global function just loads the next page ***/
 	window.nextPage = () => {
 		loadPage(getNextPage ());
@@ -79,7 +79,7 @@ requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 			systemInitialized = true;
 
 			requestFullscreen ();
-			window.nextPage ();			
+			window.nextPage ();
 
 		} else { return; }
 	}
@@ -91,7 +91,7 @@ requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 		}
 	}
 
-	
+
 	/* window.onload = requestFullscreen;
 	document.body.onload = requestFullscreen;
 	setTimeout(requestFullscreen, 100); */
@@ -99,4 +99,3 @@ requirejs (pageList.map (x => `/app/src/js/controller/${x}.js`), function () {
 	document.body.onload = onInit;
 	setTimeout(onInit, 100);
 });
-

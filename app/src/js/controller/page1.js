@@ -42,8 +42,8 @@ define(function () {
                 element.style.top = positions[this.currentLanguagePointer - 1][1];
             }
 
-            element.classList.add (this.state);            
-            
+            element.classList.add (this.state);
+
             setTimeout (this.animateLanguageBadgesEnter.bind (this), Math.random () * 500 + 500);
         }
 
@@ -66,7 +66,7 @@ define(function () {
 
                 .break ()
                 .exec (this.animateLineBreak.bind (this, +1))
-                .type ("Totalizando <strong style='color: #08ffc8'>11 anos</strong>")
+                .type (`Totalizando <strong style='color: #08ffc8'>${Math.ceil(new Date().getFullYear() - 2008)} anos</strong>`)
                 .pause (750)
 
                 .exec (() => {
@@ -93,7 +93,7 @@ define(function () {
                 // #endregion
 
                 .exec (() => { window.nextPage (); })
-                
+
                 .go ();
         }
 
@@ -107,21 +107,21 @@ define(function () {
             return new Promise ((function (resolve, reject) {
                 console.log ("[Page1] animateLanguageBadgesExit");
 
-                for (let i = 0; i < this.length; i++) {                    
+                for (let i = 0; i < this.length; i++) {
                     const child = this[i];
-                    
+
                     child.style.left = "calc(50vw - 64px)";
-                    child.style.top = "calc(50vh - 64px)";                    
+                    child.style.top = "calc(50vh - 64px)";
                 }
 
                 setTimeout (() => {
                     document.querySelector ("#page1").classList.add ("exiting");
                     setTimeout(resolve, 250);
                 }, 750);
-                
+
             }).bind (this.languages));
         }
-    
+
         onHide () {
             return new Promise (async (resolve, reject) => {
                 console.log ("[Page1] onHide");
