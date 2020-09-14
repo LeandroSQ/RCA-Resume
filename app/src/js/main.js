@@ -19,7 +19,7 @@ require.config({
 requirejs (pageList, function () {
 	// Global definitions
 	window.pages = [... arguments];
-	window.currentPageIndex = pageList.length - 2//-1;
+	window.currentPageIndex = -1;
 	window.lastPage = null
 	window.systemInitialized = false;
 
