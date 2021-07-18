@@ -39,7 +39,7 @@ define(function () {
 
                 .break ()
                 .exec (this.animateLineBreak.bind (this, +1))
-                .type ("Atualmente estou cursando <strong style='color: #99dc1a'>Análise e desenvolvimento de sistemas</strong>")
+                .type ("Me formei em <strong style='color: #99dc1a'>Análise e desenvolvimento de sistemas</strong> aos 20 anos")
                 .pause (2250)
 
                 .exec (() => {
